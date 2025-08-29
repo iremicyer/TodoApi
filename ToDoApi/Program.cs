@@ -10,7 +10,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddControllers();
 
-// 🔹 Swagger servisini ekle
+// Swagger servisini ekle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -18,7 +18,7 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    // 🔹 Swagger UI’yi aç
+    // Swagger UI’yi aç
     app.UseSwagger();
     app.UseSwaggerUI();
 }
